@@ -1,0 +1,57 @@
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  margin: 0 0 0 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h4, h5, h6, h1, h2, h3, ul, p {
+  margin: 0;
+}
+
+.input_wrap {
+  margin-top: 100px;
+}
+
+input {
+  width: 320px;
+  height: 70px;
+  padding-right: 50px;
+  padding-left: 50px;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  margin-left: -30px;
+  background-color: #FFF;
+  cursor: pointer;
+  outline: -webkit-focus-ring-color auto 0px;
+  white-space: pre-wrap;
+}
+
+input::first-line {
+  font-size: 2em;
+}
+
+.input_wrap::before {
+  content: url(../img/lock.png);
+  position: relative;
+  left: 50px;
+  top: 20px;
+}
+
+a {
+  display: inline-block;
+  width: 320px;
+  height: 70px;
+  background-color: green;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/*# sourceMappingURL=main.css.map */
