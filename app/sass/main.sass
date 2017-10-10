@@ -4,17 +4,25 @@
 .input_wrap
 	margin-top: 100px
 
+@mixin boxshadow
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(68,68,68,0.5);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(68,68,68,0.5);
+	box-shadow: 0px 5px 10px 0px rgba(68,68,68,0.5);
+
+@mixin gradient
+
 input
 	width: 320px
 	height: 70px
 	padding-right: 50px
 	padding-left: 50px
 	border-radius: 5px
-	margin-left: -30px
+	margin-left: -10px
 	background-color: #FFF
 	cursor: pointer
 	outline: -webkit-focus-ring-color auto 0px
 	white-space: pre-wrap
+	@include boxshadow
 
 input::first-line
 	font-size: 2em
@@ -32,8 +40,19 @@ a
 	background-color: green	
 	border-radius: 5px
 	text-align: center
-	padding-top: 50px
+	padding-top: 5px
+	margin-top: 20px
+	@include boxshadow
+	margin-left: 20px
+	text-decoration: none
+	span
+	 	text-transform: uppercase
 
+a::before
+	content: url(../img/lock.png)
+	position: relative
+	left: -20px
+	top: 20px
 	
 // .submitButton 
 //   width: 320px

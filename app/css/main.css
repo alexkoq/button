@@ -25,11 +25,13 @@ input {
   padding-left: 50px;
   -webkit-border-radius: 5px;
           border-radius: 5px;
-  margin-left: -30px;
+  margin-left: -10px;
   background-color: #FFF;
   cursor: pointer;
   outline: -webkit-focus-ring-color auto 0px;
   white-space: pre-wrap;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.5);
 }
 
 input::first-line {
@@ -51,7 +53,23 @@ a {
   -webkit-border-radius: 5px;
           border-radius: 5px;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 5px;
+  margin-top: 20px;
+  -webkit-box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.5);
+  box-shadow: 0px 5px 10px 0px rgba(68, 68, 68, 0.5);
+  margin-left: 20px;
+  text-decoration: none;
+}
+
+a span {
+  text-transform: uppercase;
+}
+
+a::before {
+  content: url(../img/lock.png);
+  position: relative;
+  left: -20px;
+  top: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
